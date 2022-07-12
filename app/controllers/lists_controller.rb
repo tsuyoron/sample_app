@@ -8,6 +8,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to list_path(list.id)
     else
+      #render:indexで3-9確認
       render :new
     end
   end
