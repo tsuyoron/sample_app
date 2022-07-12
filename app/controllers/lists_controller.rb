@@ -6,7 +6,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     if @list.save
-      redirect_to list_path(list.id)
+      redirect_to '/lists'
     else
       #render:indexで3-9確認
       render :new
